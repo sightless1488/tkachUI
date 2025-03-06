@@ -1,0 +1,46 @@
+*:not([dark=true]) {
+    --color-1 : #ffffff;
+    --color-2 : #e5e5e5;
+    --color-3 : #0d1b2a;
+    --color-acc : red;
+}
+*[dark=true] {
+    --color-1 : #1b263b;
+    --color-2 : #0d1b2a;
+    --color-3 : #ffffff;
+    --color-acc : red;
+}
+
+
+.check-bx {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-1);
+    margin: 0;
+    font: inherit;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    margin: 5px;
+    border-bottom-right-radius: 0px;
+}
+.check-bx:hover {
+    cursor: pointer;
+}
+.check-bx::before {
+    content: "";    
+    width: 20px;
+    height: 10px;
+    border-radius: 2.5px;
+    transform: scaleX(0) translateY(5px);
+    transition: 0.05s;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    color: var(--color-acc);
+    background-color: var(--color-acc);
+}
+.check-bx:checked::before {
+    transform: scaleX(1);
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Noto Sans", sans-serif;
+}
+*:not([dark=true]) {
+    --color-1 : #ffffff;
+    --color-2 : #e5e5e5;
+    --color-3 : #0d1b2a;
+    --color-acc : red;
+}
+*[dark=true] {
+    --color-1 : #1b263b;
+    --color-2 : #0d1b2a;
+    --color-3 : #ffffff;
+    --color-acc : red;
+}
+
+*:not([theme="dark"]) {
+    --color-1 : #ffffff;
+    --color-2 : #a5a5a5;
+    --color-3 : #0d1b2a;
+    --color-acc : red;
+}
+*[theme="dark"] {
+    --color-1 : #1b263b;
+    --color-2 : #050b11;
+    --color-3 : #ffffff;
+    --color-acc : red;
+}
+
+
+
+.App {
+    background-color: #d8c7c7;
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.App[theme="dark"] {
+    background-color: #08121d;
+}
