@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import '../All.css'
-import './InputBox.css';
+import './Label.css';
 
 class Label extends Component {
     constructor(props) {
@@ -9,7 +9,11 @@ class Label extends Component {
     }
     state = {  }
     render() { 
-        return <a>{this.props.children}</a>;
+        var darkTheme = this.props.theme == "dark";
+        var accentColor = this.props.accent;
+        return <a className="label-bx" dark={darkTheme.toString()} {...this.props} style={{
+            "--color-acc" : accentColor
+        }}>{this.props.children}</a>;
     }
 }
  

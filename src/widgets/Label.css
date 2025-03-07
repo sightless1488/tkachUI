@@ -1,0 +1,16 @@
+*:not([dark=true]) {
+    --color-1 : #ffffff;
+    --color-2 : #e5e5e5;
+    --color-3 : #0d1b2a;
+}
+*[dark=true] {
+    --color-1 : #1b263b;
+    --color-2 : #0d1b2a;
+    --color-3 : #ffffff;
+}
+
+
+.label-bx {
+    color: var(--color-3);
+    margin: 5px;
+}
