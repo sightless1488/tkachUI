@@ -7,10 +7,10 @@ npm -v
 ```
 
 ## Инициализируйте npm-пакет:
+
 ```
 cd C:\Users\tkach\Documents\GitHub\tkachUI
 ```
-## Инициализируйте пакет:
 ```
 npm init
 ```
